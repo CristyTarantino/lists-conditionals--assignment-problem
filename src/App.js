@@ -50,8 +50,10 @@ class App extends Component {
         </ol>
         <p>Hint: Keep in mind that JavaScript strings are basically arrays!</p>
         <div>
-          <input type="text" onChange={(event) => this.paragraphLengthChangeHandler(event)} value={this.state.text} />
-          <p id="js-lengthTextCalc">{this.state.textLength}</p>
+          <input type="text"
+                 onChange={(event) => this.paragraphLengthChangeHandler(event)}
+                 value={this.state.text} />
+          <p>{this.state.textLength}</p>
           <div>
             <ValidationComponent textLength={this.state.textLength} />
             {chars}
